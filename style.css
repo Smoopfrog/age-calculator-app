@@ -10,7 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Poppins';
+  font-family: "Poppins";
+  margin-top: 50px;
 }
 
 .app {
@@ -23,4 +24,19 @@ body {
 
 .inputs-container {
   display: flex;
+  gap: 20px;
+}
+
+.inputs-container label {
+  font-size: 8px;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+input {
+  border: solid 1px hsl(0, 0%, 86%);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  font-weight: 700;
 }
