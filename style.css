@@ -10,14 +10,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Poppins';
 }
 
 .app {
   background-color: white;
   width: 60%;
   padding: 20px;
+  border-radius: 10px;
+  border-bottom-right-radius: 60px;
 }
 
-/* .inputs-container {
+.inputs-container {
   display: flex;
-} */
+}
