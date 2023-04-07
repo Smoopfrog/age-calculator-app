@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Age calculator app</title>
+    <script src="ageCalculator.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +33,7 @@
   </head>
   <body>
     <div class="app">
-      <form class="inputs-container">
+      <form class="inputs-container" onsubmit="ageCalculator()">
         <div class="input-container">
           <label>DAY</label>
           <input placeholder="DD" />
@@ -45,7 +46,7 @@
           <label>YEAR</label>
           <input placeholder="YYYY" />
         </div>
-        <button>
+        <button type="submit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
