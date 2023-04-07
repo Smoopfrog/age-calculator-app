@@ -32,7 +32,7 @@
   </head>
   <body>
     <div class="app">
-      <div class="inputs-container">
+      <form class="inputs-container">
         <div class="input-container">
           <label>DAY</label>
           <input placeholder="DD" />
@@ -45,25 +45,25 @@
           <label>YEAR</label>
           <input placeholder="YYYY" />
         </div>
-      </div>
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="26"
-          height="24"
-          viewBox="0 0 46 44"
-        >
-          <g fill="none" stroke="#FFF" stroke-width="2">
-            <path
-              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
-            />
-          </g>
-        </svg>
-      </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="24"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </form>
       <div class="age-container">
-        <div><span>--</span><span>years</span></div>
-        <div><span>--</span><span>months</span></div>
-        <div><span>--</span><span>days</span></div>
+        <div><span class="age-numbers">--</span><span>years</span></div>
+        <div><span class="age-numbers">--</span><span>months</span></div>
+        <div><span class="age-numbers">--</span><span>days</span></div>
       </div>
     </div>
     <div class="attribution">
