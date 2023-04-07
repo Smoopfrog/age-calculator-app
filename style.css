@@ -52,6 +52,11 @@ input {
   font-size: 20px;
 }
 
+input:focus-visible {
+  outline: none;
+  border: solid 1px hsl(259, 100%, 65%);
+}
+
 button {
   background-color: hsl(259, 100%, 65%);
   border: none;
