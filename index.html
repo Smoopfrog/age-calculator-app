@@ -33,18 +33,18 @@
   </head>
   <body>
     <div class="app">
-      <form class="inputs-container" onsubmit="ageCalculator()">
+      <form class="inputs-container" onsubmit="ageCalculator(event)">
         <div class="input-container">
           <label>DAY</label>
-          <input placeholder="DD" />
+          <input placeholder="DD" id="input-day" >
         </div>
         <div class="input-container">
           <label>MONTH</label>
-          <input placeholder="MM" />
+          <input placeholder="MM" id="input-month"/>
         </div>
         <div class="input-container">
           <label>YEAR</label>
-          <input placeholder="YYYY" />
+          <input placeholder="YYYY" id="input-year"/>
         </div>
         <button type="submit">
           <svg
@@ -62,9 +62,9 @@
         </button>
       </form>
       <div class="age-container">
-        <div><span class="age-numbers">--</span><span>years</span></div>
-        <div><span class="age-numbers">--</span><span>months</span></div>
-        <div><span class="age-numbers">--</span><span>days</span></div>
+        <div><span class="age-numbers" id="result-years">--</span><span>years</span></div>
+        <div><span class="age-numbers" id="result-months">--</span><span>months</span></div>
+        <div><span class="age-numbers" id="result-days">--</span><span>days</span></div>
       </div>
     </div>
     <div class="attribution">
