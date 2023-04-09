@@ -36,15 +36,15 @@
       <form class="inputs-container" onsubmit="ageCalculator(event)">
         <div class="input-container">
           <label>DAY</label>
-          <input placeholder="DD" id="input-day" >
+          <input placeholder="DD" id="input-day" type="number" min="1" max="31" step="1" />
         </div>
         <div class="input-container">
           <label>MONTH</label>
-          <input placeholder="MM" id="input-month"/>
+          <input placeholder="MM" id="input-month" type="number" min="1" max="12" step="1"/>
         </div>
         <div class="input-container">
           <label>YEAR</label>
-          <input placeholder="YYYY" id="input-year"/>
+          <input placeholder="YYYY" id="input-year" type="number" step="1"/>
         </div>
         <button type="submit">
           <svg
