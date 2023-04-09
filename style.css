@@ -57,6 +57,28 @@ input:focus-visible {
   border: solid 1px hsl(259, 100%, 65%);
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.error label {
+  color: hsl(0, 100%, 67%);
+}
+
+.error-message {
+  display: none;
+  font-size: 8px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  margin-top: 3px;
+}
+
 button {
   background-color: hsl(259, 100%, 65%);
   border: none;

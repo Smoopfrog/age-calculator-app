@@ -1,6 +1,6 @@
 const ageCalculator = (event) => {
   event.preventDefault();
-  
+
   const inputDay = document.getElementById("input-day").value;
   const inputMonth = document.getElementById("input-month").value - 1;
   const inputYear = document.getElementById("input-year").value;
@@ -35,4 +35,26 @@ const ageCalculator = (event) => {
   document.getElementById("result-years").innerHTML = years;
   document.getElementById("result-months").innerHTML = months;
   document.getElementById("result-days").innerHTML = days - 1;
+};
+
+const inputValidation = (inputName) => {
+  const input = document.getElementById(`input-${inputName}`);
+  const inputDiv = document.getElementById(`input-${inputName}-div`);
+  const errorMsg = document.getElementById(`invalid-${inputName}-error`);
+  const currentYear = new Date().getFullYear();
+  const isValid = input.checkValidity();
+
+  if (!isValid || (inputName === "year" && input.value > currentYear)) {
+    console.log("WRONG");
+
+    inputDiv.classList.add("error");
+    errorMsg.style.display = "block";
+
+    return;
+  }
+
+  inputDiv.classList.remove("error");
+  errorMsg.style.display = "none";
+
+  return;
 };

@@ -34,17 +34,48 @@
   <body>
     <div class="app">
       <form class="inputs-container" onsubmit="ageCalculator(event)">
-        <div class="input-container">
+        <div class="input-container" id="input-day-div">
           <label>DAY</label>
-          <input placeholder="DD" id="input-day" type="number" min="1" max="31" step="1" />
+          <input
+            placeholder="DD"
+            id="input-day"
+            oninput="inputValidation('day')"
+            type="number"
+            min="1"
+            max="31"
+            step="1"
+          />
+          <div class="error-message" id="invalid-day-error">
+            Must be a valid day
+          </div>
         </div>
-        <div class="input-container">
+        <div class="input-container" id="input-month-div">
           <label>MONTH</label>
-          <input placeholder="MM" id="input-month" type="number" min="1" max="12" step="1"/>
+          <input
+            placeholder="MM"
+            id="input-month"
+            oninput="inputValidation('month')"
+            type="number"
+            min="1"
+            max="12"
+            step="1"
+          />
+          <div class="error-message" id="invalid-month-error">
+            Must be a valid month
+          </div>
         </div>
-        <div class="input-container">
+        <div class="input-container" id="input-year-div">
           <label>YEAR</label>
-          <input placeholder="YYYY" id="input-year" type="number" step="1"/>
+          <input
+            placeholder="YYYY"
+            id="input-year"
+            oninput="inputValidation('year')"
+            type="number"
+            step="1"
+          />
+          <div class="error-message" id="invalid-year-error">
+            Must be a valid year
+          </div>
         </div>
         <button type="submit">
           <svg
@@ -62,9 +93,17 @@
         </button>
       </form>
       <div class="age-container">
-        <div><span class="age-numbers" id="result-years">--</span><span>years</span></div>
-        <div><span class="age-numbers" id="result-months">--</span><span>months</span></div>
-        <div><span class="age-numbers" id="result-days">--</span><span>days</span></div>
+        <div>
+          <span class="age-numbers" id="result-years">--</span
+          ><span>years</span>
+        </div>
+        <div>
+          <span class="age-numbers" id="result-months">--</span
+          ><span>months</span>
+        </div>
+        <div>
+          <span class="age-numbers" id="result-days">--</span><span>days</span>
+        </div>
       </div>
     </div>
     <div class="attribution">
