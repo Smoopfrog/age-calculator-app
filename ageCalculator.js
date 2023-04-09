@@ -68,7 +68,7 @@ const ageCalculator = (event) => {
     return;
   }
 
-  const birthDate = new Date(inputYear.value, inputMonth.value, inputDay.value);
+  const birthDate = new Date(inputYear.value, inputMonth.value -1, inputDay.value);
   const dateDiff = Date.now() - birthDate.getTime();
 
   //convert the calculated difference in date format
