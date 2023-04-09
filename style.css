@@ -120,20 +120,32 @@ button:active {
 @media only screen and (max-width: 600px) {
   .app {
     width: 80%;
+    padding: 50px 20px;
   }
 
   .inputs-container {
     justify-content: space-between;
     position: relative;
+    margin-bottom: 50px;
   }
 
+  .input-container {
+    margin-bottom: 50px;
+  }
+  
   input {
     width: 80px;
   }
-  
+
   button {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
+    width: 65px;
+    height: 65px;
+  }
+  button svg {
+    width: 36px;
+    height: 36px;
   }
 }
